@@ -1,0 +1,39 @@
+HTTrack3.49-2+htsswf+htsjava launched on Mon, 18 Jul 2022 16:27:06 at https://findhouse.bookingcore.org/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://findhouse.bookingcore.org/ -O1 "C:\My Web Sites\master piece" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+16:32:08	Warning: 	Found for https://findhouse.bookingcore.org/?set_currency=eur
+16:32:08	Warning: 	File has moved from https://findhouse.bookingcore.org/?set_currency=eur to https://findhouse.bookingcore.org
+16:32:08	Warning: 	Found for https://findhouse.bookingcore.org/?set_currency=jpy
+16:32:08	Warning: 	File has moved from https://findhouse.bookingcore.org/?set_currency=jpy to https://findhouse.bookingcore.org
+16:32:08	Warning: 	Found for https://findhouse.bookingcore.org/?set_lang=ja
+16:32:08	Warning: 	File has moved from https://findhouse.bookingcore.org/?set_lang=ja to https://findhouse.bookingcore.org/ja
+16:32:09	Warning: 	Found for https://findhouse.bookingcore.org/?set_lang=egy
+16:32:09	Warning: 	File has moved from https://findhouse.bookingcore.org/?set_lang=egy to https://findhouse.bookingcore.org/egy
+16:33:59	Error: 	"Not Found" (404) at link https://findhouse.bookingcore.org/findhouse/images/background/10.jpg (from https://findhouse.bookingcore.org/findhouse/css/style.css)
+16:33:59	Error: 	"Not Found" (404) at link https://findhouse.bookingcore.org/findhouse/images/background/12.jpg (from https://findhouse.bookingcore.org/findhouse/css/style.css)
+16:33:59	Error: 	"Not Found" (404) at link https://findhouse.bookingcore.org/findhouse/images/background/1.jpg (from https://findhouse.bookingcore.org/findhouse/css/style.css)
+16:33:59	Error: 	"Not Found" (404) at link https://findhouse.bookingcore.org/findhouse/images/background/5.jpg (from https://findhouse.bookingcore.org/findhouse/css/style.css)
+16:33:59	Error: 	"Not Found" (404) at link https://findhouse.bookingcore.org/findhouse/images/background/7.jpg (from https://findhouse.bookingcore.org/findhouse/css/style.css)
+16:33:59	Error: 	"Not Found" (404) at link https://findhouse.bookingcore.org/findhouse/images/background/13.jpg (from https://findhouse.bookingcore.org/findhouse/css/style.css)
+16:33:59	Error: 	"Not Found" (404) at link https://findhouse.bookingcore.org/findhouse/images/background/3.jpg (from https://findhouse.bookingcore.org/findhouse/css/style.css)
+16:33:59	Error: 	"Not Found" (404) at link https://findhouse.bookingcore.org/findhouse/images/background/6.jpg (from https://findhouse.bookingcore.org/findhouse/css/style.css)
+16:33:59	Error: 	"Not Found" (404) at link https://findhouse.bookingcore.org/findhouse/images/background/8.jpg (from https://findhouse.bookingcore.org/findhouse/css/style.css)
+16:33:59	Error: 	"Not Found" (404) at link https://findhouse.bookingcore.org/findhouse/images/background/9.jpg (from https://findhouse.bookingcore.org/findhouse/css/style.css)
+16:33:59	Error: 	"Not Found" (404) at link https://findhouse.bookingcore.org/findhouse/images/background/11.jpg (from https://findhouse.bookingcore.org/findhouse/css/style.css)
+16:33:59	Error: 	"Not Found" (404) at link https://findhouse.bookingcore.org/findhouse/images/background/3.html (from https://findhouse.bookingcore.org/findhouse/css/style.css)
+16:33:59	Error: 	"Not Found" (404) at link https://findhouse.bookingcore.org/findhouse/images/background/inner-pagebg.jpg (from https://findhouse.bookingcore.org/findhouse/css/style.css)
+16:33:59	Error: 	"Not Found" (404) at link https://findhouse.bookingcore.org/findhouse/images/team/upload_photo.jpg (from https://findhouse.bookingcore.org/findhouse/css/style.css)
+16:33:59	Error: 	"Not Found" (404) at link https://findhouse.bookingcore.org/findhouse/images/background/4.jpg (from https://findhouse.bookingcore.org/findhouse/css/style.css)
+16:33:59	Error: 	"Not Found" (404) at link https://findhouse.bookingcore.org/findhouse/images/background/2.html (from https://findhouse.bookingcore.org/findhouse/css/style.css)
+16:33:59	Error: 	"Not Found" (404) at link https://findhouse.bookingcore.org/findhouse/images/shop/ss1.png (from https://findhouse.bookingcore.org/findhouse/css/style.css)
+16:33:59	Error: 	"Not Found" (404) at link https://findhouse.bookingcore.org/findhouse/images/shop/ss2.png (from https://findhouse.bookingcore.org/findhouse/css/style.css)
+16:33:59	Error: 	"Not Found" (404) at link https://findhouse.bookingcore.org/findhouse/images/shop/ss3.png (from https://findhouse.bookingcore.org/findhouse/css/style.css)
+16:36:16	Warning: 	Link https://findhouse.bookingcore.org/cdn-cgi/l/email-protection not scanned (follow robots meta tag)
+
+HTTrack Website Copier/3.49-2 mirror complete in 30 minutes 50 seconds : 1209 links scanned, 1185 files written (37150994 bytes overall) [20382312 bytes received at 11017 bytes/sec], 34164521 bytes transferred using HTTP compression in 1118 files, ratio 18%, 221.5 requests per connection
+(19 errors, 9 warnings, 0 messages)
