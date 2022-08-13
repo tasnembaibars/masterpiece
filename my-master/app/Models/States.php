@@ -9,6 +9,8 @@ class States extends Model
 {
     use HasFactory;
     protected $table='states';
+    
+
     protected $fillable=[
   
 'building_company',
@@ -17,8 +19,7 @@ class States extends Model
 ,'location',
 'address1',
 'address2',
-'neighbourhood',
-'category'
+'neighbourhood'
 ,'price',
 'space',
 'year',

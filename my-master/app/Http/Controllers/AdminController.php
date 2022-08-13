@@ -9,13 +9,14 @@ use App\Http\Controllers\Controller;
 
 class AdminController extends Controller
 {
+    
     public function create(){
         return view('/admin/register');
     }
 
   public function store(Request $request){
     $formFields=$request->validate([
-        'name'=>['required','min:5'],
+        'name'=>['required'],
         'email'=>['required','email',Rule::unique('admins','email')],
         'password'=>['required', 'min:8'],
         'phone'=>'required|regex:/^([0]{1}[7-9]{1})([0-9]{8})$/|digits:10|unique:admins,phone',
@@ -76,7 +77,7 @@ public function edit($id){
     $admin=Admin::find($id);
     return view('admin/edit_admin',['admin'=>$admin]);
  }
-public function update(Request $request){
+public function update(Request $request,Admin $id){
     //  $user_id = session('id');
     $admin = Admin::find($request->id);
     $admin->name=$request->name;
@@ -86,6 +87,6 @@ public function update(Request $request){
     $admin->address=$request->address;
 
     $admin->save();
-    return redirect('edit_admin/{id}')->with('message', 'User updated successfully');
+    return redirect("edit_admin/$id->id")->with('message', 'User updated successfully');
 }
 }

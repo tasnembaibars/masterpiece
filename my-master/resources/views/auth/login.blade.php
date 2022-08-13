@@ -13,7 +13,7 @@
 	<link rel="stylesheet" href={{asset("form/css/style.css")}}>
 
 	</head>
-	<body class="img js-fullheight" style="background-image: url(form/images/bg4.jpg);">
+	<body class="img js-fullheight" style="background-image: url(form/images/bg6.jpg);">
 	<section class="ftco-section">
 		<div class="container">
 			<div class="row justify-content-center">
@@ -21,7 +21,8 @@
 					{{-- <h2 class="heading-section">Create account</h2> --}}
 				</div>
 			</div>
-			<div class="row justify-content-center">
+			<div  >
+			<div class="row justify-content-center" style="border: 1px solid white ;background-color:rgba(255, 255, 255, 0.21);height:500px;">
 				<div class="col-md-6 col-lg-4">
 					<div class="login-wrap p-0">
 		      	<h3 class="mb-4 text-center">Log In to account</h3>
@@ -72,6 +73,7 @@
 		      </div>
 				</div>
 			</div>
+		</div>
 		</div>
 	</section>
 

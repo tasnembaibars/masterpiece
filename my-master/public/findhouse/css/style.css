@@ -1028,7 +1028,7 @@ nav .menu li a {
     display: block;
     padding: 20px 25px;
     text-decoration: none;
-    color: #3a3a3a
+    color: #fff
 }
 
 nav .menu li.active>a,
@@ -1151,7 +1151,7 @@ header.header-nav.menu_style_home_four.stricky-fixed a.navbar_brand .logo2 {
 header.header-nav.menu_style_home_one a.navbar_brand span,
 header.header-nav.menu_style_home_three a.navbar_brand span,
 header.header-nav.menu_style_home_five a.navbar_brand span {
-    color: #484848;
+    color: #fff;
     font-weight: 700;
     font-size: 25px;
     margin-top: 10px;
@@ -1170,7 +1170,7 @@ header.header-nav.menu_style_home_one.stricky-fixed .ace-responsive-menu li a,
 header.header-nav.menu_style_home_one.stricky-fixed a.navbar_brand span,
 header.header-nav.menu_style_home_one.stricky-fixed .sign_up_btn .btn,
 header.header-nav.menu_style_home_one.stricky-fixed #search-button i {
-    color: #484848
+    color: #fff
 }
 
 header.header-nav.menu_style_home_one.dashbord_pages.stricky-fixed a.navbar_brand span,
@@ -1179,7 +1179,7 @@ header.header-nav.menu_style_home_one.dashbord_pages.stricky-fixed li a {
 }
 
 header.header-nav.menu_style_home_one .ace-responsive-menu li a {
-    color: #484848
+    color: #fff
 }
 
 header.header-nav.menu_style_home_one .ace-responsive-menu li ul.sub-menu,
@@ -1903,7 +1903,7 @@ header.header-nav.menu_style_home_four a.navbar_brand {
 }
 
 header.header-nav.menu_style_home_four.stricky-fixed .cart_btnes.home4 a.btn.cart_btn {
-    color: #484848
+    color: #fff
 }
 
 header.header-nav.menu_style_home_four a.navbar_brand span {
@@ -1923,7 +1923,7 @@ header.header-nav.menu_style_home_four.stricky-fixed {
 }
 
 header.header-nav.menu_style_home_four.stricky-fixed a.navbar_brand span {
-    color: #484848
+    color: #fff
 }
 
 header.header-nav.menu_style_home_four a.navbar_brand:before {
@@ -1965,7 +1965,7 @@ header.header-nav.menu_style_home_four .sign_up_btn .btn:hover,
 }
 
 header.header-nav.menu_style_home_four.stricky-fixed .ace-responsive-menu li a {
-    color: #484848
+    color: #fff
 }
 
 header.header-nav.menu_style_home_five {
@@ -2155,7 +2155,7 @@ header.header-nav.menu_style_home_six a.navbar_brand {
 }
 
 header.header-nav.menu_style_home_six.stricky-fixed .cart_btnes.home4 a.btn.cart_btn {
-    color: #484848
+    color: #fff
 }
 
 header.header-nav.menu_style_home_six a.navbar_brand span {
@@ -2175,7 +2175,7 @@ header.header-nav.menu_style_home_six.stricky-fixed {
 }
 
 header.header-nav.menu_style_home_six.stricky-fixed a.navbar_brand span {
-    color: #484848
+    color: #fff
 }
 
 header.header-nav.menu_style_home_six a.navbar_brand:before {
@@ -2221,7 +2221,7 @@ header.header-nav.menu_style_home_six .ace-responsive-menu>li.last {
 }
 
 header.header-nav.menu_style_home_six.stricky-fixed .ace-responsive-menu li a {
-    color: #484848
+    color: #fff
 }
 
 .menu6_search.home6 #search-button i {
@@ -2298,7 +2298,7 @@ header.header-nav.menu_style_home_seven a.navbar_brand .logo1.home7 {
 }
 
 header.header-nav.menu_style_home_seven.stricky-fixed .cart_btnes.home4 a.btn.cart_btn {
-    color: #484848
+    color: #fff
 }
 
 header.header-nav.menu_style_home_seven .ace-responsive-menu>li>a {
@@ -2446,7 +2446,7 @@ header.header-nav.menu_style_home_seven .ace-responsive-menu>li.last {
 }
 
 .home_content {
-    padding: 380px 0 400px
+    padding: 300px 0 400px
 }
 
 .home_content .home-text p {

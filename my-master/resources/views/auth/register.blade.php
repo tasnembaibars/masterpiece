@@ -15,7 +15,7 @@
 	<link rel="stylesheet" href={{asset("form/css/style.css")}}>
 
 	</head>
-	<body class="img js-fullheight" style="background-image: url(form/images/bg4.jpg);">
+	<body class="img js-fullheight" style="background-image: url(form/images/bg6.jpg);">
 	<section class="ftco-section">
 		<div class="container">
 			<div class="row justify-content-center">
@@ -23,11 +23,11 @@
 					{{-- <h2 class="heading-section">Create account</h2> --}}
 				</div>
 			</div>
-			<div class="row justify-content-center">
-				<div class="col-md-6 col-lg-4">
+			<div class="row justify-content-center " style="border: 1px solid white ;background-color:rgba(255, 255, 255, 0.21);height:600px;">
+				<div class="col-md-6 col-lg-4 ">
 					<div class="login-wrap p-0">
 		      	<h3 class="mb-4 text-center">Create account</h3>
-		      	<form action="{{ route('register') }}" method="POST" class="signin-form">
+		      	<form action="{{ route('register') }}" method="POST" class=" signin-form">
                     @csrf
 		      		<div class="form-group">
 		      			<input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" placeholder="User Name" autofocus>
@@ -107,7 +107,7 @@
 									</label>
 								</div>
 								<div class="w-50 text-md-right">
-									<a href="/login" style="color: #ff5a5f9e;text-decoration:underline">already have an account</a>
+									<a href="/login" style="color: #c01e2e99;text-decoration:underline">already have an account</a>
 								</div>
 	            </div>
 	          </form>

@@ -32,55 +32,139 @@
                     Id
                   </th>
                   <th>
-                  image 
+                 Building company
                 </th>
                 <th>
-                  Category Name
+                  Category 
+                 </th>
+                 <th>
+                  Agency
+                 </th>
+                <th>
+                  Description
                 </th>
                 <th>
-                  Category description
+                 City
                 </th>
-                
-                   <th>
-                    Actions
+                <th>price</th>
+                <th>year</th>
+                <th>
+                 location
                    </th>
+                   <th>
+                 address 1
+                     </th>
+
+                     <th>
+                  address 2
+                       </th>
+                       <th>
+                  space
+                         </th>
+                         <th>
+                   status
+                           </th>  
+                           <th>
+                            state
+                                    </th> 
+                           <th>
+                            rooms #
+                           </th>  <th>
+                            baths # </th>
+                           <th>	neighbourhood </th>
+                            <th>	image 1 
+                           </th>
+                          <th> 	image 2  
+                          </th>
+                          <th>	image 3 
+                            
+                           </th>  
               </tr>
             </thead>
             <tbody>
-                @foreach ($categories as $category)
+                @foreach ($estates as $estate)
                     
-              <tr>
-                <td class="py-1" >
-                 {{$category['id']}}
-                </td>
-                <td>
-                 {{-- {{$category['image']}} --}}
-                 <img src="/image/{{ $category->image }}" alt="" style="height:60px;width:60px; ">
-                </td>
-                <td>
-                    {{$category['category_name']}}
-                 
-                </td>
-                <td>
-                    {{$category['description']}}
+                <tr>
+                  <td>
+                      {{$estate->est}}
+                    </td>
+                    <td>
+                      {{$estate->building_company}}
+
+                  </td>
+                  <td>
+                    {{$estate->category_id}}
+
+                   </td>
+                   <td>
+                    {{$estate->agency_id}}
+
+                   </td>
+                  <td>
+                    {{$estate->description}}
+
+                  </td>
+                  <td>
+                    {{$estate->city}}
+
+                  </td>
+                  <td>                      {{$estate->price}}
+                  </td>
+                  <td>                      {{$estate->year}}
+                  </td>
+                  <td>
+                    {{$estate->location}}
+
+                     </td>
+                     <td>
+                      {{$estate->address1}}
+
+                       </td>
+  
+                       <td>
+                        {{$estate->address2}}
+
+                         </td>
+                         <td>
+                          {{$estate->space}}
+
+                           </td>
+                           <td>
+                            {{$estate->status	}}
+
+                             </td>  
+                             <td>
+                              {{$estate->state}}
+
+                                      </td> 
+                             <td>
+                              {{$estate->rooms_num}}
+
+                             </td>  <td>
+                              {{$estate->bathrooms}} </td>	 
+
+                                <td>  {{$estate->neighbourhood}}</td>
+                            
+                             	 <td><img src="{{ $estate->image1 }}" alt="" style="height:60px;width:60px; ">
+                                </td>
+                            
+                             	  <td>  <img src="{{ $estate->image2 }}" alt="" style="height:60px;width:60px; ">
+                                 </td>	
+                             
+                                 <td>   <img src="{{ $estate->image3 }}" alt="" style="height:60px;width:60px; ">
+                                 </td> 
+                            
+                              
+                             
              
-                </td>
-                {{-- @if(count($categories)===0)
-                <td> 
-                  
-                    <span>no categories added<a href="/add">add here</a></span>
-                  
-                </td>
-                @endif --}}
-                <td>
-                  
-             <span class="card-title"><a href="{{'/edit_category/'.$category->id}}" type="submit" class="btn btn-warning mt-3 fw-bold">Edit</a></span> 
-             @if(count($categories)>1)
-             <span class="card-title"><a href="{{'/category/'.$category->id}}"class="btn btn-danger mt-3 fw-bold"  type="submit">Delete</a></span> 
+                  <td>
+             <span class="card-title"><a href="{{'/edit_estate/'.$estate->est}}" type="submit" class="btn btn-warning mt-3 fw-bold">Edit</a></span> 
+             @if(count($estates)>1)
+             <span class="card-title"><a href="{{'/estates/'.$estate->est}}"class="btn btn-danger mt-3 fw-bold"  type="submit">Delete</a></span> 
           
                    </td>
                    @else
-                   <td><p>This is the last category</p><a href="/add">add categories</a></td>
+                   <td><p>This is the last estate</p><a href="/add_estates">add estates</a></td>
                    @endif
                </tr>
         

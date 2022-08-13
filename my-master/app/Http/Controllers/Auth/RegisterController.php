@@ -76,6 +76,8 @@ class RegisterController extends Controller
             'address' => $data['address'],
         ]);
        
+
+       
     }
 //select users for admin dashboard
 public function index(){
@@ -94,7 +96,7 @@ public function edit($id){
     $user=User::find($id);
     return view('admin/edit',['user'=>$user]);
  }
-public function update(Request $request){
+public function update(Request $request,User $id){
     //  $user_id = session('id');
     $user = User::find($request->id);
     $user->name=$request->name;
@@ -104,10 +106,14 @@ public function update(Request $request){
     $user->address=$request->address;
 
     $user->save();
-    return redirect('edit/{id}')->with('message', 'User updated successfully');
+    return redirect("edit/$id->id")->with('message', 'User updated successfully');
 }
 
-
+//select users for user profile
+public function view($id){
+    $users= User::find();
+       return view("/user/profile/$id->id",['users'=>$users]);
+}
 }
 
 

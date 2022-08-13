@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\CategoriesController;
 use App\Http\Controllers\StatesController;
+use App\Http\Controllers\ReviewController;
 // use Illuminate\Routing\Route ;
 
 
@@ -31,15 +32,15 @@ Route::view('/', 'index');
 Route::view('/contact', 'contact');
 Route::view('/login', 'login');
 
-Route::view('/property', 'property');
-Route::view('/property2', 'property2f27');
+
+// Route::view('/single/{id}', 'property2f27');
 
 Route::view('/agency', 'agency');
 Route::view('/agent', 'agent');
 Route::view('/becomeagent', 'becomeagent');
 Route::view('/about', 'about');
-Route::view('/profile/{id} ','/user/profile');
-
+Route::view('/profile/{id}','/user/profile');
+// Route::view('/allEstates','allEstates');
 
 
 // Route::view('/register','register');
@@ -68,22 +69,29 @@ Route::get('/edit_admin/{id}', [AdminController::class,'edit']);
 Route::put('/edit_admin/{id}', [AdminController::class,'update']);
 Route::post('/add', [CategoriesController::class,'store']);
 Route::get('/category', [CategoriesController::class,'index']);
-Route::get('/', [CategoriesController::class,'view']);
+// Route::get('/', [CategoriesController::class,'view']);
 Route::get('/category/{id}', [CategoriesController::class,'destroy']);
 Route::get('/edit_category/{id}', [CategoriesController::class,'edit']);
 Route::put('/edit_category/{id}', [CategoriesController::class,'update']);
+Route::get('/add_estates', [CategoriesController::class,'show']);
+// Route::get('/edit_estate/{id}', [CategoriesController::class,'view']);
+// Route::get('/index',[CategoriesController::class,'all']);
 
 // estates routes
 Route::post('/add_estates',[StatesController::class,'store']);
-Route::get('/add_estates', [CategoriesController::class,'show']);
+Route::get('/',[StatesController::class,'show']);
+Route::get('/estates',[StatesController::class,'view']);
+Route::get('/estates/{id}', [StatesController::class,'destroy']);
+Route::get('/edit_estate/{id}', [StatesController::class,'edit']);
+Route::put('/edit_estate/{id}', [StatesController::class,'update']);
+Route::get('/single/{id}', [StatesController::class,'single']);
 
 //Auth  routes
 Route::get('/user', [RegisterController::class, 'index']);
 Route::get('/user/{id}', [RegisterController::class, 'destroy']);
 Route::get('/edit/{id}', [RegisterController::class, 'edit']);
 Route::put('/edit/{id}', [RegisterController::class, 'update']);
-
-
+Route::get('/profile/{id}', [RegisterController::class,'view']);
 
 
 Auth::routes();
@@ -94,3 +102,9 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 //select users from login controller
 Route::get('/profile/{id}',[LoginController::class,'index']);
 
+// select estates for website
+Route::get('/allEstates',[StatesController::class,'all']);
+
+//review router
+
+// Route::post('/single/{id}',[StatesController::class,'add']);

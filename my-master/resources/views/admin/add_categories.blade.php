@@ -28,10 +28,10 @@
                       <label for="exampleInputUsername1">Category name <span style="color:#ff0000">*</span></label>
                       <input type="text" class="form-control" id="exampleInputUsername1" placeholder="category name" name="category_name" required>
                     </div>
-                    <div class="form-group">
+                    {{-- <div class="form-group">
                       <label for="exampleInputEmail1">Category description</label>
                       <input type="text-area" class="form-control" id="exampleInputEmail1" placeholder="Category description" name="description" required>
-                    </div>
+                    </div> --}}
                   
         
                        <div class="form-group">

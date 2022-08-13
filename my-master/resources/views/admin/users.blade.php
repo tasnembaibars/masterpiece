@@ -38,9 +38,9 @@
                 <th>
                   Email
                 </th>
-                <th>
+                {{-- <th>
                   Password 
-                </th>
+                </th> --}}
                 <th>
                 phone 
                 </th>
@@ -67,10 +67,10 @@
                     {{$user['email']}}
                  
                 </td>
-                <td>
+                {{-- <td>
                     {{$user['password']}}
              
-                </td>
+                </td> --}}
                 <td>
                  {{$user['phone']}}
                 </td>

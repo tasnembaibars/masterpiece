@@ -37,9 +37,9 @@
                 <th>
                   Category Name
                 </th>
-                <th>
+                {{-- <th>
                   Category description
-                </th>
+                </th> --}}
                 
                    <th>
                     Actions
@@ -61,10 +61,10 @@
                     {{$category['category_name']}}
                  
                 </td>
-                <td>
+                {{-- <td>
                     {{$category['description']}}
              
-                </td>
+                </td> --}}
                 {{-- @if(count($categories)===0)
                 <td> 
                   

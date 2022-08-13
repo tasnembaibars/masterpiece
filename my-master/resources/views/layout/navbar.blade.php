@@ -31,7 +31,15 @@
 
 <link rel="stylesheet" href="../findhouse/css/responsive.css">
 <link rel="stylesheet" href="../dist/frontend/css/frontend.css">
+<link href="https://findhouse.bookingcore.org/libs/flags/css/flag-icon.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://findhouse.bookingcore.org/findhouse/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://findhouse.bookingcore.org/findhouse/css/style.css">
 
+<link rel="stylesheet" href="https://findhouse.bookingcore.org/findhouse/css/responsive.css">
+<link rel="stylesheet" href="https://findhouse.bookingcore.org/dist/frontend/css/frontend.css">
+
+
+<link rel="dns-prefetch" href="http://fonts.gstatic.com/">
 
 <link rel="dns-prefetch" href="http://fonts.gstatic.com/">
 <script>
@@ -98,7 +106,7 @@
 <div class="wrapper  mt-0 pt-0">
 <div class="preloader d-none"></div>
 
-<header class="header-nav menu_style_home_one navbar-scrolltofixed  stricky main-menu   header-transparent ">
+<header class="header-nav menu_style_home_one navbar-scrolltofixed  stricky main-menu   header-transparent " style="    background-color: rgba(47, 52, 67, 0.52);color:white">
 <div class="container-fluid p0">
 
 <nav>
@@ -120,10 +128,16 @@
 
 <ul id="respMenu" class="ace-responsive-menu text-right " data-menu-style="horizontal">
 <li class=" depth-0"><a target="" href="/">Home</a></li>
-<li class=" depth-0"><a target="" href="/property2">Property</a><ul class="children-menu menu-dropdown"><li class=" depth-1"><a target="" href="/property2">Property List</a><ul class="children-menu menu-dropdown"><li class=" depth-2"><a target="" href=""></a></li><li class=" depth-2"><a target="" href=""></a></li></ul></li><li class=" depth-1"><a target="" href=""></a><ul class="children-menu menu-dropdown"><li class=" depth-2"><a target="" href=""></a></li><li class=" depth-2"><a target="" href=""></a></li><li class=" depth-2"><a target="" href=""></a></li><li class=" depth-2"><a target="" href=""></a></li></ul></li></ul></li><li class=" depth-0"><a target="" href="/agency">Agency</a></li><li class="dropdown">
+<li class=" depth-0"><a target="" href="/allEstates">Property</a></li>
+{{-- <li class=" depth-0"><a target="" href="/allEstates">Property</a><ul class="children-menu menu-dropdown"><li class=" depth-1"><a target="" href="/property2">Property List</a><ul class="children-menu menu-dropdown"><li class=" depth-2"><a target="" href=""></a></li><li class=" depth-2"><a target="" href=""></a></li></ul></li><li class=" depth-1"><a target="" href=""></a><ul class="children-menu menu-dropdown"><li class=" depth-2"><a target="" href=""></a></li><li class=" depth-2"><a target="" href=""></a></li><li class=" depth-2"><a target="" href=""></a></li><li class=" depth-2"><a target="" href=""></a></li></ul></li></ul></li><li class=" depth-0"><a target="" href="/agency">Agency</a></li><li class="dropdown"> --}}
     <li class=" depth-0"><a target="" href="/about">About</a></li>
     <li class=" depth-0"><a target="" href="/contact">Contact</a></li>
-    <li class=" depth-0"><a target="" href="/">Page</a><ul class="children-menu menu-dropdown"><li class=" depth-1"><a target="" href="news.html">News</a></li><li class=" depth-1"><a target="" href="/becomeagent">Become a agent</a></li></ul></li> 
+    
+    {{-- @guest
+    @if (Route::has('login')) --}}
+    <li class=" depth-0"><a target="" href="/becomeagent">Post </a></li>
+    {{-- @endif --}}
+    {{-- <li class=" depth-0"><a target="" href="/">Page</a><ul class="children-menu menu-dropdown"><li class=" depth-1"><a target="" href="news.html">News</a></li><li class=" depth-1"><a target="" href="/becomeagent">Become a agent</a></li></ul></li>  --}}
     <a href="#" data-toggle="dropdown" class="is_login">
 
 <i class="fa fa-angle-down d-none"></i>

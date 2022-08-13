@@ -247,11 +247,11 @@ the best prices on</p>
 <img class="img-fluid" src="../uploads/demo/property/property-9.jpg">
 </div>
 </div>
-<div class="col-sm-6 col-md-4 col-lg">
+{{-- <div class="col-sm-6 col-md-4 col-lg">
 <div class="our_partner">
 <img class="img-fluid" src="../uploads/demo/property/property-10.jpg">
 </div>
-</div>
+</div> --}}
 </div>
 </div>
 </section>

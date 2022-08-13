@@ -5,7 +5,7 @@
 <div class="bravo-vendor-form-register py-5 ">
 <div class="row">
 <div class="col-12 col-lg-5">
-<h2>Become a agent</h2>
+<h2>Post a state </h2>
 <p class="sub-heading">Join our community to unlock your greatest asset and welcome paying guests into your home.</p>
 <form class="form bravo-form-register-vendor" method="post" action="https://findhouse.bookingcore.org/agent/register">
 <input type="hidden" name="_token" value="Mx8tV3YRdLdtHnRhK3OADMUJKZXT2VswAa0X5Oou">

@@ -31,16 +31,22 @@ public function index(){
     $category= Categories::all();
        return view('/admin/categories',['categories'=>$category]);
 }
-//show in home page
-public function view(){
-    $category= Categories::all();
-       return view('/index',['categories'=>$category]);
+// show in home page
+public function all(){
+    $categories= Categories::all();
+       return view('/index',compact('categories'));
 }
+
 // show ib add estates page
 
 public function show(){
-    $category= Categories::all();
-       return view('/admin/add_estates',['categories'=>$category]);
+    $categories= Categories::all();
+       return view('/admin/add_estates',['categories'=>$categories]);
+}
+//edit estate
+public function view(){
+    $categories= Categories::all();
+       return view('/admin/edit_estate',['categories'=>$categories]);
 }
 //end
 public function destroy($id){
@@ -66,7 +72,7 @@ public function edit($id){
           
         $id->update($input);
     
-        return redirect('/edit_category/{id}')
+        return redirect("/edit_category/$id->id")
                         ->with('message','Category updated successfully');
  }
 

@@ -131,7 +131,7 @@
                     <div class="col-sm-9">
                      
 
-                      <select class="form-control form-control-lg @error('category') is-invalid @enderror" id="exampleFormControlSelect2" name="category" required>
+                      <select class="form-control form-control-lg @error('category_id') is-invalid @enderror" id="exampleFormControlSelect2" name="category_id" required>
                         <option disabled selected hidden > Select Category</option>
                         @foreach ($categories as $category)
                         <option value="{{$category->id}}">{{$category->category_name}} </option>

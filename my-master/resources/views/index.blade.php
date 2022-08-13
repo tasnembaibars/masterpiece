@@ -209,31 +209,33 @@
 </div>
 <div class="col-lg-12">
 <div class="feature_property_slider">
+@foreach($estates as $estate)
+
 <div class="item">
 <div class="feat_property">
 <div class="thumb">
-<a class="thumb-image" href="property/stay-greenwich-village.html">
-<img class="img-whp" src="uploads/demo/property/property-11.jpg" alt="property image">
+<a class="thumb-image" href="/single/{{$estate->est}}">
+<img class="img-whp" src="/img/{{$estate->image2}}" alt="property image">
 </a>
 <div class="property-tag">
-<a>For Buy</a>
+<a>For {{$estate->status}}</a>
 </div>
 <div class="property-action">
 <a class="service-wishlist " data-id="11" data-type="property"><i class="fa fa-heart"></i></a>
-<a class="fp_price" href="#"> $150</a>
+<a class="fp_price" href="#"> {{$estate->price}}</a>
 </div>
 </div>
 <div class="details">
 <div class="tc_content">
-<p class="text-thm">Modern Villa</p>
-<a href="property/stay-greenwich-village.html">
-<h4>STAY GREENWICH VILLAGE</h4>
+<p class="text-thm">{{$estate->category_name }}</p>
+<a href="/single/{{$estate->est}}">
+<h4>{{$estate->description}}</h4>
 </a>
-<p><span class="flaticon-placeholder"></span> California</p>
+<p><span class="flaticon-placeholder"></span>{{$estate->city}},{{$estate->address1}}</p>
 <ul class="prop_details mb0">
-<li class="list-inline-item">Beds: 9</li>
-<li class="list-inline-item">Baths: 10</li>
-<li class="list-inline-item">Sq: 104 sqft</li>
+<li class="list-inline-item">Beds: {{$estate->rooms_num}}</li>
+<li class="list-inline-item">Baths: {{$estate->bathrooms}}</li>
+<li class="list-inline-item">Sq: {{$estate->space}}</li>
 </ul>
 </div>
 <div class="fp_footer">
@@ -248,402 +250,9 @@
 </div>
 </div>
 </div>
-<div class="item">
-<div class="feat_property">
-<div class="thumb">
-<a class="thumb-image" href="property/lily-dale-village.html">
-<img class="img-whp" src="uploads/demo/property/property-10.jpg" alt="property image">
-</a>
-<div class="property-tag">
-<a>For Buy</a>
-</div>
-<div class="property-action">
-<a class="service-wishlist " data-id="10" data-type="property"><i class="fa fa-heart"></i></a>
-<a class="fp_price" href="#"> $250</a>
-</div>
-</div>
-<div class="details">
-<div class="tc_content">
-<p class="text-thm">Town House</p>
-<a href="property/lily-dale-village.html">
-<h4>LILY DALE VILLAGE</h4>
-</a>
-<p><span class="flaticon-placeholder"></span> New York, United States</p>
-<ul class="prop_details mb0">
-<li class="list-inline-item">Beds: 9</li>
-<li class="list-inline-item">Baths: 9</li>
-<li class="list-inline-item">Sq: 145 sqft</li>
-</ul>
-</div>
-<div class="fp_footer">
-<ul class="fp_meta float-left mb0">
-<li class="list-inline-item"><a href="agent/1.html">
-<img class="avatar" src="uploads/demo/general/avatar.jpg" alt="System Admin">
-</a></li>
-<li class="list-inline-item"><a href="agent/1.html">System Admin</a></li>
-</ul>
-<div class="fp_pdate float-right">07/18/2022</div>
-</div>
-</div>
-</div>
-</div>
-<div class="item">
-<div class="feat_property">
-<div class="thumb">
-<a class="thumb-image" href="property/luxury-single.html">
-<img class="img-whp" src="uploads/demo/property/property-9.jpg" alt="property image">
-</a>
-<div class="property-tag">
-<a>For Buy</a>
-<a>Featured</a>
-</div>
-<div class="property-action">
-<a class="service-wishlist " data-id="9" data-type="property"><i class="fa fa-heart"></i></a>
-<a class="fp_price" href="#"> $350</a>
-</div>
-</div>
-<div class="details">
-<div class="tc_content">
-<p class="text-thm">Condo</p>
- <a href="property/luxury-single.html">
-<h4>LUXURY SINGLE</h4>
-</a>
-<p><span class="flaticon-placeholder"></span> Los Angeles</p>
-<ul class="prop_details mb0">
-<li class="list-inline-item">Beds: 5</li>
-<li class="list-inline-item">Baths: 1</li>
-<li class="list-inline-item">Sq: 151 sqft</li>
-</ul>
-</div>
-<div class="fp_footer">
-<ul class="fp_meta float-left mb0">
-<li class="list-inline-item"><a href="agent/10.html">
-<img class="avatar" src="uploads/demo/general/avatar-5.jpg" alt="Sarah Violet">
-</a></li>
-<li class="list-inline-item"><a href="agent/10.html">Sarah Violet</a></li>
-</ul>
-<div class="fp_pdate float-right">07/18/2022</div>
-</div>
-</div>
-</div>
-</div>
-<div class="item">
-<div class="feat_property">
-<div class="thumb">
-<a class="thumb-image" href="property/paris-greenwich-villa.html">
-<img class="img-whp" src="uploads/demo/property/property-8.jpg" alt="property image">
-</a>
-<div class="property-tag">
-<a>For Buy</a>
-<a>Featured</a>
-</div>
-<div class="property-action">
-<a class="service-wishlist " data-id="8" data-type="property"><i class="fa fa-heart"></i></a>
-<a class="fp_price" href="#"> $500</a>
-</div>
-</div>
-<div class="details">
-<div class="tc_content">
-<p class="text-thm">Modern Villa</p>
-<a href="property/paris-greenwich-villa.html">
-<h4>PARIS GREENWICH VILLA</h4>
-</a>
-<p><span class="flaticon-placeholder"></span> Paris</p>
-<ul class="prop_details mb0">
-<li class="list-inline-item">Beds: 5</li>
-<li class="list-inline-item">Baths: 2</li>
-<li class="list-inline-item">Sq: 159 sqft</li>
-</ul>
-</div>
-<div class="fp_footer">
-<ul class="fp_meta float-left mb0">
-<li class="list-inline-item"><a href="agent/18.html">
-<img class="avatar" src="uploads/demo/general/avatar-5.jpg" alt="John Dakshi">
-</a></li>
-<li class="list-inline-item"><a href="agent/18.html">John Dakshi</a></li>
-</ul>
-<div class="fp_pdate float-right">07/18/2022</div>
-</div>
-</div>
-</div>
-</div>
-<div class="item">
-<div class="feat_property">
-<div class="thumb">
-<a class="thumb-image" href="property/east-village.html">
-<img class="img-whp" src="uploads/demo/property/property-7.jpg" alt="property image">
-</a>
-<div class="property-tag">
-<a>For Buy</a>
-<a>Featured</a>
- </div>
-<div class="property-action">
-<a class="service-wishlist " data-id="7" data-type="property"><i class="fa fa-heart"></i></a>
-<a class="fp_price" href="#"> $260</a>
-</div>
-</div>
-<div class="details">
-<div class="tc_content">
-<p class="text-thm">Family House</p>
-<a href="property/east-village.html">
-<h4>EAST VILLAGE</h4>
-</a>
-<p><span class="flaticon-placeholder"></span> California</p>
-<ul class="prop_details mb0">
-<li class="list-inline-item">Beds: 10</li>
-<li class="list-inline-item">Baths: 6</li>
-<li class="list-inline-item">Sq: 143 sqft</li>
-</ul>
-</div>
-<div class="fp_footer">
-<ul class="fp_meta float-left mb0">
-<li class="list-inline-item"><a href="agent/9.html">
-<img class="avatar" src="uploads/demo/general/avatar.jpg" alt="William Diana">
-</a></li>
-<li class="list-inline-item"><a href="agent/9.html">William Diana</a></li>
-</ul>
-<div class="fp_pdate float-right">07/18/2022</div>
-</div>
-</div>
-</div>
-</div>
-<div class="item">
-<div class="feat_property">
-<div class="thumb">
-<a class="thumb-image" href="property/gorgeous-villa-bay-view.html">
-<img class="img-whp" src="uploads/demo/property/property-6.jpg" alt="property image">
-</a>
-<div class="property-tag">
-<a>For Buy</a>
-<a>Featured</a>
-</div>
-<div class="property-action">
-<a class="service-wishlist " data-id="6" data-type="property"><i class="fa fa-heart"></i></a>
-<a class="fp_price" href="#"> $320</a>
-</div>
-</div>
-<div class="details">
-<div class="tc_content">
-<p class="text-thm">Condo</p>
-<a href="property/gorgeous-villa-bay-view.html">
-<h4>Gorgeous Villa Bay View</h4>
-</a>
-<p><span class="flaticon-placeholder"></span> United States</p>
-<ul class="prop_details mb0">
-<li class="list-inline-item">Beds: 4</li>
-<li class="list-inline-item">Baths: 8</li>
-<li class="list-inline-item">Sq: 192 sqft</li>
-</ul>
-</div>
-<div class="fp_footer">
-<ul class="fp_meta float-left mb0">
-<li class="list-inline-item"><a href="agent/9.html">
-<img class="avatar" src="uploads/demo/general/avatar.jpg" alt="William Diana">
-</a></li>
-<li class="list-inline-item"><a href="agent/9.html">William Diana</a></li>
-</ul>
-<div class="fp_pdate float-right">07/18/2022</div>
-</div>
-</div>
-</div>
-</div>
-<div class="item">
-<div class="feat_property">
-<div class="thumb">
- <a class="thumb-image" href="property/renovated-apartment.html">
-<img class="img-whp" src="uploads/demo/property/property-5.jpg" alt="property image">
-</a>
-<div class="property-tag">
-<a>For Buy</a>
-</div>
-<div class="property-action">
-<a class="service-wishlist " data-id="5" data-type="property"><i class="fa fa-heart"></i></a>
-<a class="fp_price" href="#"> $220</a>
-</div>
-</div>
-<div class="details">
-<div class="tc_content">
-<p class="text-thm">Apartment</p>
-<a href="property/renovated-apartment.html">
-<h4>Renovated Apartment</h4>
-</a>
-<p><span class="flaticon-placeholder"></span> United States</p>
-<ul class="prop_details mb0">
-<li class="list-inline-item">Beds: 4</li>
-<li class="list-inline-item">Baths: 9</li>
-<li class="list-inline-item">Sq: 177 sqft</li>
-</ul>
-</div>
-<div class="fp_footer">
-<ul class="fp_meta float-left mb0">
-<li class="list-inline-item"><a href="agent/14.html">
-<img class="avatar" src="uploads/demo/general/avatar-3.jpg" alt="Anne Nami">
-</a></li>
-<li class="list-inline-item"><a href="agent/14.html">Anne Nami</a></li>
-</ul>
-<div class="fp_pdate float-right">07/18/2022</div>
-</div>
-</div>
-</div>
-</div>
-<div class="item">
-<div class="feat_property">
-<div class="thumb">
-<a class="thumb-image" href="property/luxury-family-home.html">
-<img class="img-whp" src="uploads/demo/property/property-4.jpg" alt="property image">
-</a>
-<div class="property-tag">
-<a>For Buy</a>
-<a>Featured</a>
-</div>
-<div class="property-action">
-<a class="service-wishlist " data-id="4" data-type="property"><i class="fa fa-heart"></i></a>
-<a class="fp_price" href="#"> $800</a>
-</div>
-</div>
-<div class="details">
-<div class="tc_content">
-<p class="text-thm">Family House</p>
-<a href="property/luxury-family-home.html">
-<h4>Luxury Family Home</h4>
-</a>
-<p><span class="flaticon-placeholder"></span> New York, United States</p>
-<ul class="prop_details mb0">
-<li class="list-inline-item">Beds: 6</li>
-<li class="list-inline-item">Baths: 6</li>
-<li class="list-inline-item">Sq: 103 sqft</li>
-</ul>
-</div>
-<div class="fp_footer">
-<ul class="fp_meta float-left mb0">
-<li class="list-inline-item"><a href="agent/15.html">
-<img class="avatar" src="uploads/demo/general/avatar-3.jpg" alt="Bush Elise">
-</a></li>
- <li class="list-inline-item"><a href="agent/15.html">Bush Elise</a></li>
-</ul>
-<div class="fp_pdate float-right">07/18/2022</div>
-</div>
-</div>
-</div>
-</div>
-<div class="item">
-<div class="feat_property">
-<div class="thumb">
-<a class="thumb-image" href="property/luxury-family-home-1.html">
-<img class="img-whp" src="uploads/demo/property/property-3.jpg" alt="property image">
-</a>
-<div class="property-tag">
-<a>For Buy</a>
-</div>
-<div class="property-action">
-<a class="service-wishlist " data-id="3" data-type="property"><i class="fa fa-heart"></i></a>
-<a class="fp_price" href="#"> $650</a>
-</div>
-</div>
-<div class="details">
-<div class="tc_content">
-<p class="text-thm">Condo</p>
-<a href="property/luxury-family-home-1.html">
-<h4>Luxury Family Home</h4>
-</a>
-<p><span class="flaticon-placeholder"></span> California</p>
-<ul class="prop_details mb0">
-<li class="list-inline-item">Beds: 10</li>
-<li class="list-inline-item">Baths: 8</li>
-<li class="list-inline-item">Sq: 163 sqft</li>
-</ul>
-</div>
-<div class="fp_footer">
-<ul class="fp_meta float-left mb0">
-<li class="list-inline-item"><a href="agent/18.html">
-<img class="avatar" src="uploads/demo/general/avatar-5.jpg" alt="John Dakshi">
-</a></li>
-<li class="list-inline-item"><a href="agent/18.html">John Dakshi</a></li>
-</ul>
-<div class="fp_pdate float-right">07/18/2022</div>
-</div>
-</div>
-</div>
-</div>
-<div class="item">
-<div class="feat_property">
-<div class="thumb">
-<a class="thumb-image" href="property/gorgeous-villa-bay-view-1.html">
-<img class="img-whp" src="uploads/demo/property/property-2.jpg" alt="property image">
-</a>
-<div class="property-tag">
-<a>For Buy</a>
-</div>
-<div class="property-action">
-<a class="service-wishlist " data-id="2" data-type="property"><i class="fa fa-heart"></i></a>
-<a class="fp_price" href="#"> $900</a>
-</div>
-</div>
-<div class="details">
-<div class="tc_content">
-<p class="text-thm">Condo</p>
-<a href="property/gorgeous-villa-bay-view-1.html">
-<h4>Gorgeous Villa Bay View</h4>
-</a>
-<p><span class="flaticon-placeholder"></span> California</p>
-<ul class="prop_details mb0">
-<li class="list-inline-item">Beds: 6</li>
-<li class="list-inline-item">Baths: 9</li>
-<li class="list-inline-item">Sq: 175 sqft</li>
-</ul>
-</div>
-<div class="fp_footer">
-<ul class="fp_meta float-left mb0">
-<li class="list-inline-item"><a href="agent/9.html">
-<img class="avatar" src="uploads/demo/general/avatar.jpg" alt="William Diana">
-</a></li>
-<li class="list-inline-item"><a href="agent/9.html">William Diana</a></li>
-</ul>
-<div class="fp_pdate float-right">07/18/2022</div>
-</div>
-</div>
-</div>
-</div>
-<div class="item">
-<div class="feat_property">
-<div class="thumb">
-<a class="thumb-image" href="property/renovated-apartment-1.html">
-<img class="img-whp" src="uploads/demo/property/property-1.jpg" alt="property image">
-</a>
-<div class="property-tag">
-<a>For Buy</a>
-<a>Featured</a>
-</div>
-<div class="property-action">
-<a class="service-wishlist " data-id="1" data-type="property"><i class="fa fa-heart"></i></a>
-<a class="fp_price" href="#"> $121</a>
-</div>
-</div>
-<div class="details">
-<div class="tc_content">
-<p class="text-thm">Apartment</p>
-<a href="property/renovated-apartment-1.html">
-<h4>Renovated Apartment</h4>
-</a>
-<p><span class="flaticon-placeholder"></span> Paris</p>
-<ul class="prop_details mb0">
-<li class="list-inline-item">Beds: 3</li>
-<li class="list-inline-item">Baths: 7</li>
-<li class="list-inline-item">Sq: 192 sqft</li>
-</ul>
-</div>
-<div class="fp_footer">
-<ul class="fp_meta float-left mb0">
-<li class="list-inline-item"><a href="agent/1.html">
-<img class="avatar" src="uploads/demo/general/avatar.jpg" alt="System Admin">
-</a></li>
-<li class="list-inline-item"><a href="agent/1.html">System Admin</a></li>
-</ul>
-<div class="fp_pdate float-right">07/18/2022</div>
-</div>
-</div>
-</div>
-</div>
+ @endforeach 
+
+
 </div>
 </div>
 </div>
@@ -660,10 +269,11 @@
 </div>
 </div>
 {{-- categories --}}
-@foreach ($categories as $category)
 <div class="row">
+@foreach($categories as $category)
+
 <div class="col-lg-4 col-xl-4">
-<a href="">
+<a href="/allEstates">
 <div class="properti_city ">
 <div class="thumb"><img class="img-fluid w100" src="/image/{{ $category->image }}" alt=""></div>
 <div class="overlay">
@@ -679,7 +289,8 @@
 </div>
 </a>
  </div>
- @endforeach
+@endforeach
+
 {{-- end category --}}
 {{-- <div class="col-lg-8 col-xl-8">
 <a href="propertyd752.html?location_id=2">
@@ -844,44 +455,67 @@ the best prices on</p>
 </section>
 
 <section class="our-blog bb1 pb30" style="background-color: #f7f7f7;background-image: url('')">
-<div class="container">
+{{-- <div class="container">
 <div class="row">
 <div class="col-lg-12">
-<div class="main-title text-center">
+<div class="main-title text-center"> --}}
+    <div class="container ovh">
+        <div class="row">
+        <div class="col-lg-12">
+        <div class="main-title text-center mb40">
 <h2>Articles &amp; Tips</h2>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 </div>
 </div>
 </div>
 <div class="row">
-<div class="col-md-6 col-lg-4 col-xl-4">
-<div class="for_blog feat_property">
-<a href="news/morning-in-the-northern-sea.html">
-<div class="thumb">
-<img src="uploads/demo/news/news-1.jpg" class="img-whp" alt="">
-</div>
-<div class="details">
-<div class="tc_content">
-<p class="text-thm">
-<a href="news/category/family-house.html">
-Family House
-</a>
-</p>
-<h4><a href="news/morning-in-the-northern-sea.html">Morning in the Northern sea</a></h4>
-</div>
-<div class="fp_footer">
-<ul class="fp_meta float-left mb0">
-<li class="list-inline-item"><a href="#">
-<img class="avatar" src="uploads/demo/general/avatar.jpg" alt="System Admin">
-</a></li>
-<li class="list-inline-item"><a href="#">System Admin</a></li>
-</ul>
-<a class="fp_pdate float-right" href="#">07/18/2022</a>
-</div>
-</div>
-</a>
-</div> </div>
-<div class="col-md-6 col-lg-4 col-xl-4">
+<div class="col-lg-12">
+<div class="feature_property_slider">
+
+    @foreach($estates as $estate)
+
+    <div class="item">
+    <div class="feat_property">
+    <div class="thumb">
+    <a class="thumb-image" href="/single/{{$estate->est}}">
+    <img class="img-whp" src="/img/{{$estate->image2}}" alt="property image">
+    </a>
+    <div class="property-tag">
+    <a>For {{$estate->status}}</a>
+    </div>
+    <div class="property-action">
+    <a class="service-wishlist " data-id="11" data-type="property"><i class="fa fa-heart"></i></a>
+    <a class="fp_price" href="#"> {{$estate->price}}</a>
+    </div>
+    </div>
+    <div class="details">
+    <div class="tc_content">
+    <p class="text-thm">{{$estate->category_name }}</p>
+    <a href="">
+    <h4>{{$estate->description}}</h4>
+    </a>
+    <p><span class="flaticon-placeholder"></span>{{$estate->city}},{{$estate->address1}}</p>
+    <ul class="prop_details mb0">
+    <li class="list-inline-item">Beds: {{$estate->rooms_num}}</li>
+    <li class="list-inline-item">Baths: {{$estate->bathrooms}}</li>
+    <li class="list-inline-item">Sq: {{$estate->space}}</li>
+    </ul>
+    </div>
+    <div class="fp_footer">
+    <ul class="fp_meta float-left mb0">
+    <li class="list-inline-item"><a href="agent/12.html">
+    <img class="avatar" src="uploads/demo/general/avatar-5.jpg" alt="Richard Davina">
+    </a></li>
+    <li class="list-inline-item"><a href="agent/12.html">Richard Davina</a></li>
+    </ul>
+    <div class="fp_pdate float-right">07/18/2022</div>
+    </div>
+    </div>
+    </div>
+    </div>
+    @endforeach
+ </div>
+{{-- <div class="col-md-6 col-lg-4 col-xl-4">
 <div class="for_blog feat_property">
 <a href="news/america-national-parks-with-denver.html">
 <div class="thumb">
@@ -907,8 +541,8 @@ Family House
 </div>
 </div>
 </a>
-</div> </div>
-<div class="col-md-6 col-lg-4 col-xl-4">
+</div> </div> --}}
+{{-- <div class="col-md-6 col-lg-4 col-xl-4">
 <div class="for_blog feat_property">
 <a href="news/a-seaside-reset-in-laguna-beach.html">
 <div class="thumb">
@@ -934,7 +568,8 @@ Condo
 </div>
 </div>
 </a>
-</div> </div>
+</div> </div> --}}
+</div>
 </div>
 </div>
 </section>

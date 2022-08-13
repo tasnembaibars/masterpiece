@@ -22,14 +22,14 @@ class CreateStatesTable extends Migration
             $table->string('year');
             $table->bigInteger('agency_id')->nullable(true)->unsigned();
             $table->foreign('agency_id')->references('id')->on('agencies')->onDelete('cascade');
-            $table->bigInteger('category_id')->nullable(false)->unsigned()->default('0');
+            $table->bigInteger('category_id')->nullable(false)->unsigned();
             $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
             $table->string('location');
             $table->string('address1');
             $table->string('address2');
             $table->string('space');
             $table->string('status');
-            $table->string('category');
+            
             $table->string('rooms_num');
             $table->string('bathrooms');
             $table->string('price');
